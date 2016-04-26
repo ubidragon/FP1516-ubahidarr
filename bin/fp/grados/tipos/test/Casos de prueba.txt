@@ -1,0 +1,85 @@
+la dedicacion se hace a partir de los creditos que vienen dados
+		// en la lista
+		// por lo que no hay que sacarle los creditos a las asignaturas, los
+		// cuales pueden ser diferentes
+		// es decir, recorres los creditos, no las asignaturas, y haces la suma
+Casos de prueba
+
+Personas
+
+"12345678Z", "Antonio", "Hidalgo Garcia", LocalDate.of(1990, 9, 25), "anthidgar@.us.es"
+"19271059A", "Juan", "Perez Gonzalez", LocalDate.of(1950, 9, 15), "juapergon@.us.es"
+"61844079T", "Eduardo", "Hidalgo Perez", LocalDate.of(1990, 3, 25), "eduhidper@.us.es"
+"50146713C", "Jose", "Gonzalez Diaz", LocalDate.of(1980, 1, 15), "josgondia@.us.es"
+"58127020V", "Eustaquio", "Hidalgo Gonzalez", LocalDate.of(1990, 9, 15), "eushidgon@.us.es"
+"40560724V", "Joaquin", "Arriaga Garcia", LocalDate.of(1965, 3, 25), "joaarrgar@.us.es"
+"01742665R", "Miguel", "Hidalgo Corchuelo", LocalDate.of(1990, 7, 8), "mighidcor@.us.es"
+
+Tutorias
+
+nuevaTutoria(p, LocalTime.of(9, 15), 30, DayOfWeek.TUESDAY);
+nuevaTutoria(p, LocalTime.of(11, 10), 30, DayOfWeek.TUESDAY);
+nuevaTutoria(p, LocalTime.of(9, 10), 30, DayOfWeek.FRIDAY);
+nuevaTutoria(p, LocalTime.of(11, 45), 30, DayOfWeek.FRIDAY);
+nuevaTutoria(p, LocalTime.of(9, 30), 30, DayOfWeek.MONDAY);
+nuevaTutoria(p, LocalTime.of(11, 30), 30, DayOfWeek.MONDAY);
+
+
+
+Facultades
+
+"Escuela Tecnica Superior de Ingenieria "
+"Escuela Tecnica Superior de Ingenieria Informatica"
+"Escuela Politecnica Superior"
+"Facultad de Derecho"
+"Facultad de Empresariales"
+"Facultad de Fisica"
+"Facultad de Quimica"
+"Facultad de Biologia"
+
+
+
+Departamentos
+
+"ADMINISTRACIÓN DE EMPRESAS Y COMERCIALIZACIÓN E INVESTIGACIÓN DE MERCADOS (MARKETING)"
+"ÁLGEBRA"
+"ANÁLISIS ECONÓMICO Y ECONOMÍA POLÍTICA"
+"ANÁLISIS MATEMÁTICO"
+"ANATOMÍA Y EMBRIOLOGÍA HUMANA"
+"ANTROPOLOGÍA SOCIAL"
+"ARQUITECTURA Y TECNOLOGÍA DE COMPUTADORES"
+"BIOLOGÍA CELULAR"
+"BIOLOGÍA VEGETAL Y ECOLOGÍA"
+"BIOQUÍMICA MÉDICA Y BIOLOGÍA MOLECULAR E INMUNOLOGÍA"
+"BIOQUÍMICA VEGETAL Y BIOLOGÍA MOLECULAR"
+"BIOQUÍMICA Y BIOLOGÍA MOLECULAR"
+"CIENCIAS AGROFORESTALES"
+"CIENCIAS DE LA COMPUTACIÓN E INTELIGENCIA ARTIFICIAL"
+"CIENCIAS JURÍDICAS BÁSICAS (DERECHO ROMANO, HISTORIA DEL DERECHO Y DERECHO ECLESIÁSTICO DEL ESTADO)"
+"CIRUGÍA"
+"CITOLOGÍA E HISTOLOGÍA NORMAL Y PATOLÓGICA"
+"COMUNICACIÓN AUDIOVISUAL Y PUBLICIDAD"
+"CONSTRUCCIONES ARQUITECTÓNICAS I"
+"CONSTRUCCIONES ARQUITECTÓNICAS II"
+"CONTABILIDAD Y ECONOMÍA FINANCIERA"
+"CRISTALOGRAFÍA, MINERALOGÍA Y QUÍMICA AGRÍCOLA"
+"DERECHO ADMINISTRATIVO"
+"DERECHO CIVIL Y DERECHO INTERNACIONAL PRIVADO"
+"DERECHO CONSTITUCIONAL"
+"DERECHO DEL TRABAJO Y DE LA SEGURIDAD SOCIAL"
+"DERECHO FINANCIERO Y TRIBUTARIO"
+"DERECHO INTERNACIONAL PÚBLICO Y RELACIONES INTERNACIONALES"
+"DERECHO MERCANTIL"
+"DERECHO PENAL Y CIENCIAS CRIMINALES"
+"DERECHO PROCESAL"
+"DIBUJO"
+
+
+Asignaturas
+
+"Algebra Lineal y Numerica", "2050001",6.0,TipoAsignatura.ANUAL,2
+"Introduccion a las Matematicas Discretas", "2060901",18.0,PRIMER_CUATRIMESTRE,1
+"Fundamentos Fisicos de la Informatica", "2050801",12.0,TipoAsignatura.ANUAL,4
+"Diseño y Prueba", "2057801",18.0,SEGUNDO_CUATRIMESTRE,2
+"Fisica Molecular", "2650001",6.0,PRIMER_CUATRIMESTRE,4
+"Estructura de Computadores", "2050601",12.0,SEGUNDO_CUATRIMESTRE,1

@@ -3,8 +3,8 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/Ubidragon/Downloads/helpers-1.1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Ubidragon/Downloads/tests1516-E3-1.0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Ubidragon/Downloads/guava-16.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mega/FP/FP1516-ubahidarr/lib/guava-16.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mega/FP/FP1516-ubahidarr/lib/helpers-1.0.7.jar"/>
+	<classpathentry kind="lib" path="E:/Mega/FP/FP1516-ubahidarr/lib/tests1516-E3-1.0.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

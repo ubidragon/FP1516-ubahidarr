@@ -28,7 +28,7 @@ public class GradoImpl2 extends GradoImpl {
 	public Asignatura getAsignatura(String codigo) {
 
 		return Stream.concat(getAsignaturasObligatorias().stream(), getAsignaturasOptativas().stream())
-				.filter(x -> x.getCodigo().equals(codigo)).findFirst().get();
+				.filter(x -> x.getCodigo().equals(codigo)).findFirst().orElse(null);
 
 	}
 

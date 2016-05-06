@@ -202,7 +202,7 @@ public class GradoImpl implements Grado {
 
 		}
 
-		for (Asignatura asig : getAsignaturasObligatorias()) {
+		for (Asignatura asig : getAsignaturasOptativas()) {
 
 			res.put(asig, asig.getCreditos());
 

@@ -48,7 +48,7 @@ public class TutoriaImpl implements Tutoria {
 	 * CONSTRUCTOR APARTIR DE STRING
 	 *************************************************/
 	public TutoriaImpl(String s) {
-		String[] trozos = s.split(";");
+		String[] trozos = s.split(",");
 
 		if (trozos.length != 3) {
 			throw new IllegalArgumentException();
@@ -56,11 +56,13 @@ public class TutoriaImpl implements Tutoria {
 
 		String dia = trozos[0].trim();
 		DayOfWeek diasemana = transformaDia(dia);
+		checkDia(diasemana);
 		LocalTime horaCom = LocalTime.parse(trozos[1].trim());
 		LocalTime horaFin = LocalTime.parse(trozos[2].trim());
 
-		checkDia(diasemana);
+		
 		checkDuracion((int) horaCom.until(horaFin, ChronoUnit.MINUTES));
+		checkHorario(horaCom,horaFin);
 
 		this.dia = diasemana;
 		this.inicio = horaCom;

@@ -294,7 +294,7 @@ public class Grados {
 
 	public static List<Beca> createBecas(String nombreFichero) {
 
-		List<Beca> res = leeFichero(nombreFichero, s -> new BecaImpl(s));
+		List<Beca> res = leeFichero(nombreFichero, s -> createBeca(s));
 
 		return res;
 
@@ -465,7 +465,7 @@ public class Grados {
 
 	public static List<Despacho> createDespachos(String nombreFichero) {
 
-		List<Despacho> res = leeFichero(nombreFichero, s -> new DespachoImpl(s));
+		List<Despacho> res = leeFichero(nombreFichero, s ->createDespacho(s));
 
 		return res;
 
@@ -555,7 +555,7 @@ public class Grados {
 
 	public static List<Espacio> createEspacios(String nombreFichero) {
 
-		List<Espacio> res = leeFichero(nombreFichero, s -> new EspacioImpl(s));
+		List<Espacio> res = leeFichero(nombreFichero, s -> createEspacio(s));
 
 		return res;
 

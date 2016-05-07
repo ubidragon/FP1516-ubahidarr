@@ -190,7 +190,7 @@ public class Grados {
 
 	public static List<Asignatura> createAsignaturas(String nombreFichero) {
 
-		List<Asignatura> res = leeFichero(nombreFichero, s -> new AsignaturaImpl(s));
+		List<Asignatura> res = leeFichero(nombreFichero, s -> createAsignatura(s));
 
 		return res;
 

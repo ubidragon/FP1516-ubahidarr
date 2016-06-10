@@ -37,6 +37,9 @@ public class AlumnoImpl extends PersonaImpl implements Alumno {
 	public AlumnoImpl(String s) {
 		super(s);
 
+		/*sigue el mismo trimeo que en PersonaImpl de ahi el super s, coge el string perteneciente a PersonaImpl
+		
+*/
 		checkEmailUniversidad(getEmail());
 
 		asignaturas = new HashSet<Asignatura>();

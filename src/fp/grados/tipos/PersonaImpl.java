@@ -49,21 +49,34 @@ public class PersonaImpl implements Persona {
 	public PersonaImpl(String persona) {
 		// Ejemplo de formato de la cadena de entrada:
 		// 12345678H,Juan,López García,20/01/1998,juan@acmemail.com
+
+		//Corto en trozos la cadena
 		String[] campos = persona.split(",");
+
+		//Comprobamos la longitud 
 		if (campos.length != 5) {
 			throw new IllegalArgumentException("El formato de la cadena de entrada no es correcto.");
 		}
+
+		/*Copiamos cada trozo de cadena y lo transformamos en el atributo correspondiente
+		*/
 		String dni = campos[0].trim();
+		//el [X] indica que trozo de la cadena que hemos troceado le corresponde
 		String email = campos[4].trim();
 		LocalDate fechaNacimiento = LocalDate.parse(campos[3].trim(), DateTimeFormatter.ofPattern("d/M/y"));
+
+		//Realizamos un checkeo de las propiedad de nuevo
 		checkDni(dni);
 		checkFechaNacimiento(fechaNacimiento);
 		checkEmail(email);
+
+		//Finalmente copiamos los atributos
 		this.dni = dni;
 		this.nombre = campos[1].trim();
 		this.apellidos = campos[2].trim();
 		this.fechaNacimiento = fechaNacimiento;
 		this.email = email;
+
 	}
 
 	/***************************************************
@@ -92,16 +105,28 @@ public class PersonaImpl implements Persona {
 	}
 
 	private void checkEmail(String email) {
+
+		//Si el email esta vacio o no contine "@" lanza excepcion
+
 		if (!(email.isEmpty() || email.contains("@"))) {
+
 			throw new ExcepcionPersonaNoValida("El email debe contener el usuario, una arroba y el servidor.");
+
 		}
+
 	}
 
 	private void checkFechaNacimiento(LocalDate fechaNacimiento) {
+		
+		//Si la fecha de nacimiento es posterior a la fecha actual, lanza la excepcion
+		
 		if (!fechaNacimiento.isBefore(LocalDate.now())) {
+
 			throw new ExcepcionPersonaNoValida(
 					"La fecha de nacimiento de una persona debe ser anterior " + "a la fecha actual del sistema.");
+
 		}
+
 	}
 
 	/***************************************************

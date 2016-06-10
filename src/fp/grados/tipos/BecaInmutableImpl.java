@@ -7,8 +7,8 @@ public final class BecaInmutableImpl implements BecaInmutable {
 	 * Declaramos propiedades basicas o finales, NUNCA DERIVADAS Al ser
 	 * inmutables convertimos en finales las propiedades basicas
 	 */
-	private static final Double CUANTIA_MINIMA = 1500.0;
-	private final String codigo;
+	private static final Double CUANTIA_MINIMA = 1500.0;/* al definirse como final, pasa a tener un*/
+	private final String codigo;						/*valor invariable*/
 	private final Double cuantiaTotal;
 	private final Integer duracion;
 	private final TipoBeca tipo;
